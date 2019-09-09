@@ -331,8 +331,18 @@ body {
 
 #main-footer {
 	padding: 100px 50px;
-	background: #fdc878
+	background: #fdc878;
 	/*background: #006db7;*/
+	color: #fff;
+	text-align: center;
+}
+
+#main-footer h2 {
+	font-size: 20px;
+}
+
+#main-footer .spacing {
+	letter-spacing: 2px;
 }
 
 #gallery {

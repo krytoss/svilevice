@@ -10,7 +10,7 @@
 	@yield('styles', '')
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="body">
 
 	<header id="main-header">
 
@@ -31,25 +31,25 @@
 							<div class="nav-wrapper">
 								<ul id="main-nav" class="nav vertical-nav">
 									<li>
-										<a href="#home" class="anchor active quote-section icons">O nás</a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#intro" class="anchor intro icons">O nás</a>
 									</li>
 									<li>
-										<a href="#home" class="anchor quote-section icons">Čo robíme</a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#job" class="anchor job icons">Čo robíme</a>
 									</li>
 									<li>
-										<a href="#about" class="anchor about">Hľadám pomoc</a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#help" class="anchor help">Hľadám pomoc</a>
 									</li>
 									<li>
-										<a href="#"><img src="{{ asset('img/logo.png') }}"></a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#body" class="anchor body"><img src="{{ asset('img/logo.png') }}"></a>
 									</li>
 									<li>
-										<a href="gallery" class="anchor services">Fotogaléria</a>
+										<a href="gallery" class="{{ request()->is('gallery') ? 'active' : '' }}">Fotogaléria</a>
 									</li>
 									<li>
-										<a href="#contact" class="anchor contact map">Kontakt</a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#contact" class="anchor contact map">Kontakt</a>
 									</li>
 									<li>
-										<a href="#contact" class="anchor contact map">Užitočné odkazy</a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#contact" class="anchor map">Užitočné odkazy</a>
 									</li>
 								</ul>
 							</div>
@@ -111,6 +111,19 @@
 	</main>
 
 	<footer id="main-footer">
+
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-6 offset-sm-3 col-12">
+					<h2>SLUŽBA VČASNEJ INTERVENCIE LEVICE</h2>
+					<p>
+						Družstevnícka 22, 934 80 Levice
+						<br>Telefón: +421 910 753 003
+						<br>E-mail: ---
+					</p>
+				</div>
+			</div>
+		</div>
 		
 		<div class="footer-fixed">
 			<div class="container">
@@ -118,11 +131,11 @@
 					<div class="col col-4 text-center">
 						email@svilevice.sk
 					</div>
-					<div class="col col-4 text-center">
+					<div class="col col-4 text-center spacing">
 						PODPORA RODINÁM A DEŤOM
 					</div>
 					<div class="col col-4 text-center">
-						+421 999 999 999
+						+421 910 753 003
 					</div>
 				</div>
 			</div>
@@ -132,7 +145,10 @@
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+	@if(request()->is('/')) {
+		<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+	}
+	@endif
 	<script src="https://kit.fontawesome.com/8d80d3b633.js"></script>
 	@yield('scripts', '')
 </body>

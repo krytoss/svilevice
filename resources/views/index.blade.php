@@ -24,7 +24,7 @@
 
 			<div class="col col-3 text-center">
 				<div class="circle">
-					<i class="fas fa-users"></i>
+					<i class="fas fa-eye"></i>
 				</div>
 				<h3>Naša vízia</h3>
 				<div class="spacer"></div>
@@ -35,7 +35,7 @@
 
 			<div class="col col-3 text-center">
 				<div class="circle">
-					<i class="fas fa-hand-holding-heart"></i>
+					<i class="fas fa-users"></i>
 				</div>
 				<h3>Naše poslanie</h3>
 				<div class="spacer"></div>
