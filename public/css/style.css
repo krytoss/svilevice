@@ -1,0 +1,370 @@
+body {
+	width: 100%;
+	overflow-y: hidden;
+	padding-bottom: 30px;
+}
+
+.spacer {
+	display: block;
+	width: 100%;
+	height: 20px;
+}
+
+.black {
+	color: #000;
+}
+
+.white {
+	color: #fff;
+}
+
+.white-bg {
+	background: #fff;
+	background: rgba(255, 255, 255, .6);
+}
+
+.black-bg {
+	background: #000;
+	background: rgba(0, 0, 0, .6);
+}
+
+.orange-bg {
+	background: #fdc878;
+}
+
+.title {
+	font-weight: 200;
+	padding: 10px 0;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+#top-header {
+	position: fixed;
+	height: 180px;
+	width: 100%;
+	display: block;
+	z-index: 999;
+	/*border-radius: 0 0 50% 50% / 90%;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 10px 13px -3px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 10px 13px -3px rgba(0,0,0,0.4);
+	box-shadow: 0px 10px 13px -3px rgba(0,0,0,0.4);*/
+}
+
+#top-header::before {
+    content : "";
+    display: block;
+	position: fixed;
+	z-index: -1;
+	height: 480px;
+	width: 100%;
+	top: -250px;
+	left: 0;
+	opacity: .85;
+	background: transparent url("http://cvibratislava.sk/images/obluk%20menu.svg?crc=3999775615") no-repeat center top;
+	background-size: 2800px 500px;
+}
+
+.navbar {
+	margin: 0 auto;
+}
+
+.navbar,
+.nav-wrapper,
+#main-nav {
+	width: 100%;
+}
+
+#main-nav {
+	margin-top: 50px;
+	line-height: 20px;
+	float: right;
+	font-size: 0;
+}
+
+#main-nav li {
+	height: 50px;
+	width: 14%;
+	padding: 0px 15px;
+	border-left: 2px solid grey;
+  	display: table; 
+}
+
+#main-nav li:nth-child(3) {
+	border-right: 2px solid grey;
+}
+
+#main-nav li:nth-child(4) {
+	width: 16%;
+	height: 100px;
+	border-left: none;
+}
+
+#main-nav li:nth-child(4) img {
+	margin-top: -20px;
+	width: 100%
+}
+
+#main-nav li:nth-child(4) a:hover {
+	border-bottom: 4px solid transparent;
+}
+
+#main-nav li:last-child {
+	border-right: 2px solid grey;
+}
+
+#main-nav a {
+	display: table-cell;
+	vertical-align: middle; 
+	text-align: center;
+	color: #333;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	border-bottom: 4px solid transparent;
+}
+
+#main-nav a:hover,
+#main-nav a.active {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 4px solid #006db7;
+}
+
+#slider {
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+}
+
+#slider .carousel-item {
+	width: 100%;
+	height: inherit;
+}
+
+#slider .carousel-item img {
+	width: 100%;
+	height: 700px;
+	object-fit: cover;
+}
+
+#slider .carousel-item .carousel-caption {
+	top: 60%;
+	transform: translateY(-50%);
+}
+
+#slider .arrow {
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	font-size: 25px;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: rgba(0, 0, 0, .3);
+	cursor: pointer;
+	transition: all .3s;
+}
+
+#slider .arrow:hover {
+	background: rgba(0, 0, 0, .6);
+	text-decoration: none;
+}
+
+#slider .arrow-left {
+	left: 0;
+	right: auto;
+}
+
+#slider .arrow-right {
+	right: 0;
+	left: auto;
+}
+
+#slider .carousel-indicators li {
+	opacity: .6;
+}
+
+
+.circle {
+	color: #fff;
+	color: rgba(255,255,255,.6);
+	display: block;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 140px;
+	font-size: 60px;
+	margin: 0 auto;
+	/*background: #006db7;*/
+	background: #fdc878;
+	border: 20px solid #fff;
+  	transition: .6s;
+}
+
+.circle:hover {
+	/*border: 20px solid #006db7;*/
+	border: 20px solid #fdc878;
+	color: #fff;
+}
+
+#intro {
+	position: relative;
+	z-index: 99;
+	background: transparent;
+	padding-bottom: 100px;
+}
+
+/*.top-curve {
+	background: url("http://cvibratislava.sk/images/polelipsa.svg") no-repeat center top 30px/2710px 396px !important;
+	margin-top: -120px;
+	padding-top: 120px;
+}*/
+
+.top-curve {
+	position: relative;
+	margin-top: -120px;
+}
+
+.top-curve:before {
+	display: block;
+	content: "";
+	height: 120px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background: url("http://cvibratislava.sk/images/polelipsa.svg") no-repeat center top 30px/2710px 396px;
+}
+
+.bottom-curve {
+	position: relative;
+	margin-top: -50px;
+}
+
+.bottom-curve:before {
+	display: block;
+	content: "";
+	height: 120px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background: url("http://cvibratislava.sk/images/polelipsa%202.svg") no-repeat center bottom 30px/2710px 396px;
+}
+
+.push-curve {
+	padding-top: 120px;
+}
+
+/*.bottom-curve {
+	background: url("http://cvibratislava.sk/images/polelipsa%202.svg") no-repeat center bottom/2710px 396px !important;
+}*/
+
+.both-curve {
+	background: url("http://cvibratislava.sk/images/polelipsa.svg") no-repeat center top 30px/2710px 396px, url("http://cvibratislava.sk/images/polelipsa%202.svg") no-repeat center bottom/2710px 396px !important;
+	margin-top: -120px;
+}
+
+#into .container {
+	margin-top: -100px;
+}
+
+.section-title {
+	display: block;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.section-title h2 {
+	font-weight: 300;
+	display: inline-block;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.section-body {
+	display: block;
+	padding: 100px 0 50px;
+}
+
+#job .section-title {
+	background: url("../img/02.jpeg") no-repeat top -300px center;
+	background-size: cover;
+}
+
+#job .job-list {
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+}
+
+#job .job-list li {
+	width: 100%;
+	padding: 10px 0;
+	border-top: 2px solid #fdc878;
+	text-transform: uppercase;
+}
+
+#job .job-list li:last-child {
+	border-bottom: 2px solid #fdc878;
+}
+
+#help .section-title {
+	background: url("../img/mother-child.jpg") no-repeat top -380px center;
+}
+
+#map {
+	opacity: .6;
+	height: 300px;
+}
+
+#map:hover {
+	opacity: 1;
+}
+
+#main-footer {
+	padding: 100px 50px;
+	background: #fdc878
+	/*background: #006db7;*/
+}
+
+#gallery {
+	padding: 50px 0;
+}
+
+#gallery .img,
+#gallery .img img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+#gallery .img img {
+	margin: 10px 0;
+	opacity: .8;
+}
+
+#gallery .img:hover img {
+	opacity: 1;
+}
+
+.footer-fixed {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fdc878;
+	z-index: 999;
+	-webkit-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
+}
