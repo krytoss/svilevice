@@ -9,7 +9,7 @@
 		
 		<div class="row">
 			
-			<div class="col col-3 text-center">
+			<div class="col col-md-3 col-sm-6 col-12 text-center">
 				<div class="circle">
 					<i class="fas fa-hands"></i>
 				</div>
@@ -22,7 +22,7 @@
 				</p>
 			</div>
 
-			<div class="col col-3 text-center">
+			<div class="col col-md-3 col-sm-6 col-12 text-center">
 				<div class="circle">
 					<i class="fas fa-eye"></i>
 				</div>
@@ -33,7 +33,7 @@
 				</p>
 			</div>
 
-			<div class="col col-3 text-center">
+			<div class="col col-md-3 col-sm-6 col-12 text-center">
 				<div class="circle">
 					<i class="fas fa-users"></i>
 				</div>
@@ -47,7 +47,7 @@
 				</p>
 			</div>
 
-			<div class="col col-3 text-center">
+			<div class="col col-md-3 col-sm-6 col-12 text-center">
 				<div class="circle">
 					<i class="fas fa-hand-holding-heart"></i>
 				</div>
@@ -94,7 +94,7 @@
 	<div class="section-body top-curve push-curve">
 		<div class="container">
 			<div class="row">
-				<div class="col col-8 offset-2">
+				<div class="col col-md-8 offset-md-2 col-12">
 					<h2 class="title white orange-bg text-center">Podporujeme rodinu včas</h2>
 					<p>
 						Narodenie dieťaťa so zdravotným postihnutím prináša so sebou veľkú záťaž nie len pre rodičov, ale aj celú rodinu. Často ide o úplnú zmenu v živote rodiny spojenú s viacerými psychickými, ekonomickými a sociálnymi problémami sprevádzanými šokom, obviňovaním a pocitmi viny. Pre správne fungovanie rodiny je dôležité, aby vedeli, ako do svojho života zapojiť všetkých, ktorí by mohli byť pre nich zdrojom podpory a pomoci.
@@ -139,7 +139,7 @@
 	<div class="section-body top-curve push-curve">
 		<div class="container">
 			<div class="row">
-				<div class="col col-8 offset-2">
+				<div class="col col-12 offset-md-2 col-md-8">
 					<form method="post" action="sendContact">
 						{{ csrf_field() }}
 						<input class="form-control" type="text" name="name" placeholder="Meno">

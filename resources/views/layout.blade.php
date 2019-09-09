@@ -20,10 +20,12 @@
 				
 				<div class="row">
 					
-					<nav class="navbar navbar-expand-md">
+					<nav class="navbar navbar-dark navbar-expand-md">
 
+						
+						<a href="{{ request()->is('/') ? '' : '/' }}#body" class="anchor body responsive"><img src="{{ asset('img/logo.png') }}"></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="pull-right">
-						    <span class="navbar-toggler-icon"></span>
+								  <span class="navbar-toggler-icon"></span>
 						</button>
 
 						<div class="collapse navbar-collapse" id="navbarNav">
@@ -39,7 +41,7 @@
 									<li>
 										<a href="{{ request()->is('/') ? '' : '/' }}#help" class="anchor help">Hľadám pomoc</a>
 									</li>
-									<li>
+									<li class="logo-link">
 										<a href="{{ request()->is('/') ? '' : '/' }}#body" class="anchor body"><img src="{{ asset('img/logo.png') }}"></a>
 									</li>
 									<li>
