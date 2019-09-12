@@ -48,10 +48,10 @@
 										<a href="gallery" class="{{ request()->is('gallery') ? 'active' : '' }}">Fotogaléria</a>
 									</li>
 									<li>
-										<a href="{{ request()->is('/') ? '' : '/' }}#contact" class="anchor contact map">Kontakt</a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#links" class="anchor links">Užitočné odkazy</a>
 									</li>
 									<li>
-										<a href="{{ request()->is('/') ? '' : '/' }}#contact" class="anchor map">Užitočné odkazy</a>
+										<a href="{{ request()->is('/') ? '' : '/' }}#contact" class="anchor contact map">Kontakt</a>
 									</li>
 								</ul>
 							</div>

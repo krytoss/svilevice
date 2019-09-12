@@ -157,6 +157,37 @@
 	</div>
 </section>
 
+<section id="links" class="bottom-curve">
+	<div class="section-title">
+		<h2 class="white-bg">Užitočné odkazy <br>pre rodičov</h2>
+	</div>
+	<div class="section-body top-curve push-curve">
+		<div class="container">
+			<div class="row">
+				<div class="col col-12 text-center">
+					<a href="http://hlasrodin.sk/platforma-rodin/">http://hlasrodin.sk/platforma-rodin/</a><br/>
+					<a href="https://asociaciavi.sk/">https://asociaciavi.sk/</a><br/>
+					<a href="http://www.sposa.sk/autizmus/co-je-autizmus/">http://www.sposa.sk/autizmus/co-je-autizmus/</a><br/>
+					<a href="http://www.sbah.sk/">http://www.sbah.sk/</a><br/>
+					<a href="http://downovsyndrom.sk/v16/">http://downovsyndrom.sk/v16/</a><br/>
+					<a href="http://www.ranastarostlivost.sk/">http://www.ranastarostlivost.sk/</a><br/>
+					<a href="http://dietasdmo.sk/centrum-natalia/rehabilitacne-centrum/">http://dietasdmo.sk/centrum-natalia/rehabilitacne-centrum/</a><br/>
+					<a href="http://sukromnanz.edupage.org/text9/">http://sukromnanz.edupage.org/text9/</a><br/>
+					<a href="https://cpppapnz.webnode.sk/">https://cpppapnz.webnode.sk/</a><br/>
+					<a href="http://www.dyscentrum.sk/">http://www.dyscentrum.sk/</a><br/>
+					<a href="https://ssicervenovanr.edupage.org/">https://ssicervenovanr.edupage.org/</a><br/>
+					<a href="https://ssmudronova.edupage.org/text5/">https://ssmudronova.edupage.org/text5/</a><br/>
+					<a href="http://www.nrozp.sk/">http://www.nrozp.sk/</a><br/>
+					<a href="https://www.otvorenahra.sk/">https://www.otvorenahra.sk/</a><br/>
+					<a href="http://www.rodinnaterapia.sk/">http://www.rodinnaterapia.sk/</a><br/>
+					<a href="https://www.psychoterapeutickaporadna.sk">https://www.psychoterapeutickaporadna.sk</a><br/>
+					<a href="https://www.infora.sk/">https://www.infora.sk/</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section id="contact">
 	<div id="map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.2385380916708!2d18.6209300157541!3d48.22128117923026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476adcf60ea264c7%3A0x9378419eda1c7b03!2sDru%C5%BEstevn%C3%ADcka%202744%2F22%2C%20934%2001%20Levice!5e0!3m2!1ssk!2ssk!4v1566773221269!5m2!1ssk!2ssk" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
