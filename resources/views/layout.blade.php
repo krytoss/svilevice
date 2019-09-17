@@ -121,7 +121,7 @@
 					<p>
 						Družstevnícka 22, 934 80 Levice
 						<br>Telefón: +421 910 753 003
-						<br>E-mail: ---
+						<br>E-mail: jesenzivotalv@gmail.com
 					</p>
 				</div>
 			</div>
@@ -131,7 +131,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col col-4 text-center">
-						email@svilevice.sk
+						jesenzivotalv@gmail.com
 					</div>
 					<div class="col col-4 text-center spacing">
 						PODPORA RODINÁM A DEŤOM
