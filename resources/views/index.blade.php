@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section id="intro" class="top-curve">
+<section id="intro"> <!-- class="top-curve" -->
 	<div class="container">
 		
 		<div class="row">
@@ -15,10 +15,10 @@
 				</div>
 				<h3>Služba včasnej intervencie</h3>
 				<p>
-					je bezplatná služba poskytovaná rodine, terénnou formou v jej prirodzenom prostredí, môže byť doplnená o ambulantnú v našich priestoroch
+					je bezplatná služba, realizovaná hlavne v prirodzenom prostredí rodiny, je zameraná na terénnu prácu
 				</p>
 				<p>
-					je určená pre každú rodinu ktorej vývin dieťaťa je rizikový alebo má zdravotné znevýhodnenie od narodenia do 7 rokov maloletého dieťaťa
+					predstavuje podporu a pomoc rodinám so zdravotne znevýhodnenými deťmi alebo s deťmi s rizikovým vývinom v rannom veku (0-7rokov)
 				</p>
 			</div>
 
@@ -29,7 +29,10 @@
 				<h3>Naša vízia</h3>
 				<div class="spacer"></div>
 				<p>
-					podporiť rodinu s dieťaťom včas, čo možno najskôr od identifikovania rizika vo vývine dieťaťa
+					sprevádzať rodinu v náročnej životnej situácii v jej prirodzenom prostredí
+				</p>
+				<p>
+					spolupracovať s odbornou a laickou verejnosťou v oblasti zvyšovania povedomia o službe v regióne
 				</p>
 			</div>
 
@@ -87,11 +90,11 @@
 	</div>
 </section>
 
-<section id="job" class="bottom-curve">
+<section id="job"> <!-- class="bottom-curve" -->
 	<div class="section-title">
 		<h2 class="white-bg">Naša práca</h2>
 	</div>
-	<div class="section-body top-curve push-curve">
+	<div class="section-body"> <!-- class="top-curve push-curve" -->
 		<div class="container">
 			<div class="row">
 				<div class="col col-md-8 offset-md-2 col-12">
@@ -131,12 +134,12 @@
 	</div>
 </section>
 
-<section id="help" class="bottom-curve">
+<section id="help"> <!-- class="bottom-curve" -->
 	<div class="section-title">
 		<h2>Hľadáte pomoc
 		<br>a podporu?</h2>
 	</div>
-	<div class="section-body top-curve push-curve">
+	<div class="section-body"> <!-- class="top-curve push-curve" -->
 		<div class="container">
 			<div class="row">
 				<div class="col col-12 offset-md-2 col-md-8">
@@ -157,11 +160,11 @@
 	</div>
 </section>
 
-<section id="links" class="bottom-curve">
+<section id="links"> <!-- class="bottom-curve" -->
 	<div class="section-title">
 		<h2 class="white-bg">Užitočné odkazy <br>pre rodičov</h2>
 	</div>
-	<div class="section-body top-curve push-curve">
+	<div class="section-body"> <!-- class="top-curve push-curve" -->
 		<div class="container">
 			<div class="row">
 				<div class="col col-12 text-center">

@@ -19,6 +19,13 @@
 			<div class="container">
 				
 				<div class="row">
+
+						<div class="row logo text-center">
+							<div class="col col-12">
+								<a href="{{ request()->is('/') ? '' : '/' }}#body" class="anchor body"><img src="{{ asset('img/logo.png') }}"></a>
+							</div>
+								
+						</div>
 					
 					<nav class="navbar navbar-dark navbar-expand-md">
 
@@ -29,9 +36,11 @@
 						</button>
 
 						<div class="collapse navbar-collapse" id="navbarNav">
-
 							<div class="nav-wrapper">
 								<ul id="main-nav" class="nav vertical-nav">
+									<li class="logo-link text-center">
+										<a href="{{ request()->is('/') ? '' : '/' }}#main-header" class="anchor intro icons"><img src="{{ asset('img/logo.png') }}"></a>
+									</li>
 									<li>
 										<a href="{{ request()->is('/') ? '' : '/' }}#intro" class="anchor intro icons">O nás</a>
 									</li>
@@ -40,9 +49,6 @@
 									</li>
 									<li>
 										<a href="{{ request()->is('/') ? '' : '/' }}#help" class="anchor help">Hľadám pomoc</a>
-									</li>
-									<li class="logo-link">
-										<a href="{{ request()->is('/') ? '' : '/' }}#body" class="anchor body"><img src="{{ asset('img/logo.png') }}"></a>
 									</li>
 									<li>
 										<a href="gallery" class="{{ request()->is('gallery') ? 'active' : '' }}">Fotogaléria</a>

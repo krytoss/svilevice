@@ -44,6 +44,7 @@ body {
 	width: 100%;
 	display: block;
 	z-index: 999;
+	background: rgba(255, 255, 255, .7);
 	/*border-radius: 0 0 50% 50% / 90%;
 	overflow: hidden;
 	-webkit-box-shadow: 0px 10px 13px -3px rgba(0,0,0,0.4);
@@ -51,7 +52,29 @@ body {
 	box-shadow: 0px 10px 13px -3px rgba(0,0,0,0.4);*/
 }
 
-#top-header::before {
+#top-header .logo-link {
+	display: none;
+}
+
+#top-header.sticky {
+	background: #fdc878;
+	height: 66px;
+}
+
+#top-header.sticky .logo {
+	display: none;
+}
+
+#top-header.sticky .logo-link {
+	display: block;
+	padding: 0;
+}
+
+#top-header.sticky .logo-link img {
+	height: 50px;
+}
+
+/* #top-header::before {
     content : "";
     display: block;
 	position: fixed;
@@ -63,7 +86,7 @@ body {
 	opacity: .85;
 	background: transparent url("http://cvibratislava.sk/images/obluk%20menu.svg?crc=3999775615") no-repeat center top;
 	background-size: 2800px 500px;
-}
+} */
 
 #top-header .responsive {
 	display: none;
@@ -87,8 +110,16 @@ body {
 	width: 100%;
 }
 
+#main-header .logo {
+	width: 100%;
+	margin: 10px 0 10px;
+}
+
+#main-header .logo img {
+	width: 100px;
+}
+
 #main-nav {
-	margin-top: 50px;
 	line-height: 20px;
 	float: right;
 	font-size: 0;
@@ -96,12 +127,22 @@ body {
 
 #main-nav li {
 	height: 50px;
-	width: 14%;
+	width: 16.66%;
 	padding: 0px 15px;
 	border-left: 2px solid grey;
   	display: table; 
 }
 
+#top-header.sticky #main-nav li {
+	width: 14.14%;
+}
+
+#top-header.sticky #main-nav li.logo-link {
+	width: 14%;
+	border-left: none;
+}
+
+/*
 #main-nav li:nth-child(3) {
 	border-right: 2px solid grey;
 }
@@ -110,7 +151,7 @@ body {
 	width: 16%;
 	height: 100px;
 	border-left: none;
-}
+} 
 
 #main-nav li:nth-child(4) img {
 	margin-top: -20px;
@@ -120,6 +161,7 @@ body {
 #main-nav li:nth-child(4) a:hover {
 	border-bottom: 4px solid transparent;
 }
+*/
 
 #main-nav li:last-child {
 	border-right: 2px solid grey;
@@ -138,8 +180,8 @@ body {
 	border-bottom: 4px solid transparent;
 }
 
-#main-nav a:hover,
-#main-nav a.active {
+#main-nav li:not(.logo-link) a:hover,
+#main-nav li:not(.logo-link) a.active {
 	color: #333;
 	text-decoration: none;
 	border-bottom: 4px solid #006db7;
@@ -147,7 +189,7 @@ body {
 
 #slider {
 	position: relative;
-	height: 700px;
+	height: 100vh;
 	overflow: hidden;
 }
 
@@ -158,7 +200,7 @@ body {
 
 #slider .carousel-item img {
 	width: 100%;
-	height: 700px;
+	height: 100vh;
 	object-fit: cover;
 }
 
@@ -204,8 +246,10 @@ body {
 
 
 .circle {
+	margin-top: 20px;
 	color: #fff;
-	color: rgba(255,255,255,.6);
+	/* color: rgba(255,255,255,.6); */
+	color: #fdc878;
 	display: block;
 	width: 180px;
 	height: 180px;
@@ -213,24 +257,25 @@ body {
 	text-align: center;
 	line-height: 140px;
 	font-size: 60px;
-	margin: 0 auto;
-	/*background: #006db7;*/
-	background: #fdc878;
+	margin: 0 auto 20px;
+	/*background: #fdc878;*/
 	border: 20px solid #fff;
+	opacity: .5;
   	transition: .6s;
 }
 
 .circle:hover {
 	/*border: 20px solid #006db7;*/
 	border: 20px solid #fdc878;
-	color: #fff;
+	opacity: 1;
+	/*color: #fff;*/
 }
 
 #intro {
 	position: relative;
 	z-index: 99;
 	background: transparent;
-	padding-bottom: 100px;
+	padding: 20px 0 100px;
 }
 
 /*.top-curve {
@@ -319,13 +364,13 @@ body {
 #job .job-list li {
 	width: 100%;
 	padding: 10px 0;
-	border-top: 2px solid #fdc878;
+	border-top: 2px solid transparent/*#fdc878*/;
 	text-transform: uppercase;
 }
 
-#job .job-list li:last-child {
+/* #job .job-list li:last-child {
 	border-bottom: 2px solid #fdc878;
-}
+} */
 
 #help .section-title {
 	background: url("../img/mother-child.jpg") no-repeat top -380px center;
@@ -399,11 +444,11 @@ body {
 
 	#main-nav a {
 		color: #333;
-		font-size: 12px;
+		font-size: 10px;
 	}
 
-	#main-nav a:hover,
-	#main-nav a.active {
+	#main-nav li:not(.logo-link) a:hover,
+	#main-nav li:not(.logo-link) a.active {
 		color: #333;
 		text-decoration: none;
 		border-bottom: 4px solid #006db7;
@@ -417,7 +462,8 @@ body {
 		display: none;
 	}
 
-	#top-header {
+	#top-header,
+	#top-header.sticky {
 		height: auto;
 		background: #fdc878;
 		-webkit-box-shadow: 1px 0px 14px 0px rgba(0,0,0,0.75);
@@ -429,18 +475,24 @@ body {
 		display: block;
 	}
 
+	#main-header .logo {
+		display: none;
+	}
+
 	#main-nav {
 		margin-top: 20px;
 	}
 
-	#main-nav li {
+	#main-nav li,
+	#top-header.sticky #main-nav li {
 		display: block;
 		width: 100%;
 		border: none;
 		height: 30px;
 	}
 
-	#main-nav li.logo-link {
+	#main-nav li.logo-link,
+	#top-header.sticky #main-nav li.logo-link {
 		display: none;
 	}
 
